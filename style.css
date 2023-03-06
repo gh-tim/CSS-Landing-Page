@@ -11,7 +11,7 @@
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 0 150px;
+    padding: 20px 150px;
     margin: 0;
 }
 
@@ -47,7 +47,8 @@
     flex-basis: 20em;
 }
 
-.sign-up {
+.sign-up,
+.sign-up-bottom {
     background-color: #3882F6;
     font-size: 16px;
     border-radius: 10px;
@@ -56,6 +57,11 @@
     color: #F9FAF8;
     justify-content: center;
     margin-top: 10px;
+}
+.sign-up-bottom {
+    border: 1px solid  #ffffff;
+    display: flex;
+    flex-shrink: 0;
 }
 
 .pic img {
@@ -81,8 +87,13 @@ a {
     font-size: 18px;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
 .info {
-    margin: 16px;
+    margin: 32px;
     font-size: 36px;
     font-weight: bolder;
     display: flex;
@@ -90,10 +101,15 @@ a {
     align-items: center;
 }
 
+.galaxy-con {
+    display: flex;
+    gap: 48px;
+    margin-left: 48px;
+    margin-right: 48px;
+}
+
 .galaxy-con img {
     display: flex;
-    text-align: center;
-    justify-content: center;
     width: 150px;
     height: 150px;
     border-radius: 5px;
@@ -101,12 +117,16 @@ a {
 
 .desc {
     display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
+    align-items: center;
+    gap: 18px;
+    
 }
 
 .quote {
-    margin-top: 32px;
+    margin-top: 120px;
     background-color: #E5E7EB;
     padding: 150px 200px;
     display: flex;
@@ -116,4 +136,34 @@ a {
     font-weight: 100;
     font-style: italic;
     color: #1F2937;
+}
+
+.action {
+    display: flex;
+    background-color: #3882F6;
+    margin: 100px 150px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 50px;
+    gap: 150px;
+}
+
+.call,
+.direction {
+    color: #E5E7EB;
+}
+
+.action-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.call {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.direction {
+    font-size: 14px;
 }
