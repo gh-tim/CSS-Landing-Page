@@ -1,10 +1,12 @@
 .body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     background: #eee;
 }
 
 .header,
-.hero {
+.hero,
+.footer {
     background-color: #1F2937;
 }
 
@@ -37,7 +39,8 @@
     justify-content: center;
 }
 
-.sec-text {
+.sec-text,
+.footer {
     color: #E5E7EB;
 }
 
@@ -57,6 +60,7 @@
     color: #F9FAF8;
     justify-content: center;
     margin-top: 10px;
+    font-weight: 700;
 }
 .sign-up-bottom {
     border: 1px solid  #ffffff;
@@ -166,4 +170,11 @@ a {
 
 .direction {
     font-size: 14px;
+}
+
+.footer {
+    padding: 20px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
